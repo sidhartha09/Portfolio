@@ -8,6 +8,7 @@ import Services from './components/Services'
 import Projects from './components/Projects'
 import ContentCreator from './components/ContentCreator'
 import Internships from './components/Internships'
+import Education from './components/Education'
 import Leadership from './components/Leadership'
 import Certificates from './components/Certificates'
 import SoftSkills from './components/SoftSkills'
@@ -26,6 +27,7 @@ function App() {
       <Projects />
       <ContentCreator />
       <Internships />
+      <Education />
       <Leadership />
       <Certificates />
       <SoftSkills />

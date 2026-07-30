@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Handle scroll to make navbar more solid
+  // Handle scroll to make navbar background state responsive
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -18,9 +18,9 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+  const navLinks = ['Home', 'About', 'Skills', 'Experience', 'Education', 'Projects', 'Contact'];
 
-  const hireMeMailto = `mailto:mdyusufcse096@iesuniversity.ac.in?subject=Hiring Inquiry – Portfolio&body=Hello Md Yusuf,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,`;
+  const hireMeMailto = `mailto:${personalInfo.emails.primary}?subject=Inquiry – Data Engineering Portfolio&body=Hello ${personalInfo.firstName},%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,`;
 
   return (
     <nav 
@@ -28,7 +28,7 @@ const Navbar = () => {
         isOpen 
           ? 'bg-[#ff2a2a] py-4'
           : isScrolled 
-            ? 'bg-transparent py-4' 
+            ? 'bg-transparent py-4 backdrop-blur-md bg-black/40'
             : 'bg-transparent py-6'
       }`}
     >
@@ -46,7 +46,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <a 
               key={link} 
-              href={`#${link.toLowerCase()}`}
+              href={link === 'Home' ? '#' : `#${link.toLowerCase()}`}
               className="text-white/80 hover:text-white font-medium relative group transition-colors duration-300"
             >
               {link}
@@ -71,6 +71,7 @@ const Navbar = () => {
           <button 
             onClick={() => setIsOpen(!isOpen)}
             className="text-white focus:outline-none p-2"
+            aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isOpen ? (
@@ -93,7 +94,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <a 
               key={link} 
-              href={`#${link.toLowerCase()}`}
+              href={link === 'Home' ? '#' : `#${link.toLowerCase()}`}
               onClick={() => setIsOpen(false)}
               className="text-white hover:text-black font-bold text-lg border-b border-white/20 pb-2 transition-colors"
             >

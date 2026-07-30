@@ -1,296 +1,337 @@
 // ============================================================
-// portfolioData.js — Centralized configuration for Md Yusuf's Portfolio
+// portfolioData.js — Centralized configuration for Sidhartha Thogari's Portfolio
 // All external links, personal info, and content in one place.
-// Update this file to change any content across the entire site.
 // ============================================================
 
+import resumePdf from '../../Portfolio Assets/Resume.pdf';
+
 export const personalInfo = {
-  name: "Md Yusuf",
-  firstName: "Md Yusuf",
-  brandName: "Md Yusuf",
-  title: "Full Stack & Java Developer",
-  location: "Bhopal, India",
-  phone: "+91 99396-08743",
+  name: "Sidhartha Thogari",
+  firstName: "Sidhartha",
+  brandName: "Sidhartha Thogari",
+  title: "Senior Data Engineer | Databricks & Azure Specialist",
+  location: "United Kingdom",
+  phone: "+44 77749-15173",
   emails: {
-    primary: "mdyusufcse096@iesuniversity.ac.in",
-    secondary: "yusuf.rgpv@gmail.com",
+    primary: "sid.siddhartha09@gmail.com",
   },
   summary:
-    "Aspiring software engineer and motivated B.Tech Computer Science student with solid skills in Java, Spring Boot, React, and Python. Passionate about building scalable full-stack applications with clean architecture and modern tech stacks.",
-  resumeUrl: "/Md_Yusuf_Resume_2026.pdf",
+    "Databricks Certified Azure Data Engineer with 8+ years of experience designing, implementing, and maintaining enterprise-scale cloud data platforms, modern Lakehouse architectures, and analytics solutions. Strong expertise in Azure Databricks, PySpark, SQL, Azure Data Factory, Delta Lake, Unity Catalog, ETL/ELT, Data Warehousing, and Medallion Architecture.",
+  resumeUrl: resumePdf,
 };
 
 export const socialLinks = {
-  github: "https://github.com/mdyusuf0",
-  linkedin: "https://linkedin.com/in/mdyusuf0",
-  instagram: "https://instagram.com/heyyusuffff",
+  github: "https://github.com/sidhartha-thogari",
+  linkedin: "https://uk.linkedin.com/in/sidharthathogari09",
+  email: "mailto:sid.siddhartha09@gmail.com",
 };
 
 export const heroContent = {
-  greeting: "Hi, I'm Md Yusuf",
-  titleHighlight: "Full Stack & Java Developer",
+  greeting: "Hi, I'm Sidhartha",
+  titleHighlight: "Senior Data Engineer",
   subtitle:
-    "I build fast, scalable applications using Java, Spring Boot, MERN Stack, and Python.",
-  ctaPrimary: { text: "View My Work", href: "#projects" },
+    "Databricks Certified Azure Data Engineer with 8+ years of experience building enterprise Lakehouse architectures, PySpark ETL pipelines, and scalable cloud data platforms.",
+  ctaPrimary: { text: "View Experience", href: "#experience" },
   ctaSecondary: {
     text: "Contact Me",
-    href: "mailto:mdyusufcse096@iesuniversity.ac.in?subject=Hiring Inquiry – Portfolio&body=Hello Md Yusuf,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
+    href: "mailto:sid.siddhartha09@gmail.com?subject=Inquiry%20-%20Data%20Engineering%20Portfolio&body=Hello%20Sidhartha,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity%20with%20you.%0D%0A%0D%0ABest%20Regards,",
   },
-  ctaResume: { text: "Download Resume", href: "/Md_Yusuf_Resume_2026.pdf" },
+  ctaResume: { text: "Download Resume", href: resumePdf },
 };
 
 export const aboutContent = {
   heading: "Hello!",
-  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Md Yusuf</span>, an aspiring software engineer based in Bhopal, India, dedicated to crafting clean, functional, and highly scalable full-stack applications.`,
-  techStack: ["Java", "Spring Boot", "MERN Stack"],
+  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Sidhartha Thogari</span>, a Databricks Certified Azure Data Engineer based in the United Kingdom with 8+ years of experience crafting scalable, secure, and high-performance enterprise cloud data platforms and modern Lakehouse architectures.`,
+  techStack: ["Azure Databricks", "PySpark & Delta Lake", "Lakehouse Architecture"],
 };
 
 export const skillsContent = {
-  badge: "My Process",
-  heading: "Here's how I turn ideas into real-world applications",
+  badge: "Engineering Principles",
+  heading: "How I architect enterprise cloud data platforms",
   description:
-    "I follow a structured, creative, and highly technical approach to turn ideas into robust full-stack applications.",
+    "I follow a structured, modern Medallion Architecture (Bronze, Silver, Gold) approach to engineer robust, governed, and highly scalable data platforms.",
   cards: [
     {
       number: "01",
-      title: "Research",
-      text: "I start by understanding goals, user requirements, and technical constraints to lay a rock-solid foundation for the project.",
+      title: "Ingest",
+      text: "Automating batch & real-time streaming ingestion from ERP, CRM, POS, and REST APIs into Azure Data Lake using ADF, Event Hubs, and Auto Loader.",
     },
     {
       number: "02",
-      title: "Design",
-      text: "Crafting clean architecture, intuitive interfaces, and pixel-perfect wireframes that guarantee an engaging and accessible user experience.",
+      title: "Transform",
+      text: "Building scalable PySpark and SQL pipelines with Delta Live Tables (DLT), Change Data Capture (CDC), and Medallion Architecture.",
     },
     {
       number: "03",
-      title: "Develop",
-      text: "Building scalable backends and responsive frontends using modern tech stacks and best practices.",
+      title: "Govern",
+      text: "Enforcing Unity Catalog governance, PII data protection, access controls, data quality validation, and GDPR-compliant RTBF frameworks.",
     },
     {
       number: "04",
-      title: "Deploy",
-      text: "Rigorous testing, performance optimization, and seamless deployment to cloud infrastructure, followed by ongoing support.",
+      title: "Deliver",
+      text: "Delivering AI-ready curated datasets, Databricks Genie semantic models, and AI/BI dashboards for executive decision-making.",
     },
   ],
-  endText: "Ready to ship!",
+  endText: "Data-driven success!",
 };
 
-// Brand New Technical Skills Data
+// Technical Skills Data
 export const technicalSkills = {
   categories: [
     {
-      title: "Programming Languages",
+      title: "Cloud Data Engineering",
       skills: [
-        { name: "Java", level: 90 },
-        { name: "C++", level: 85 },
-        { name: "Python", level: 75 }
+        { name: "Azure Databricks", level: 95 },
+        { name: "PySpark", level: 95 },
+        { name: "Delta Lake", level: 92 },
+        { name: "Azure Data Factory (ADF)", level: 90 },
+        { name: "Medallion Architecture", level: 95 },
+        { name: "ETL / ELT Pipelines", level: 95 }
       ]
     },
     {
-      title: "Full Stack",
+      title: "Modern Databricks Platform",
       skills: [
-        { name: "MERN Stack", level: 90 },
-        { name: "HTML", level: 95 },
-        { name: "CSS", level: 90 },
-        { name: "JavaScript", level: 92 }
+        { name: "Unity Catalog", level: 92 },
+        { name: "Delta Live Tables (DLT)", level: 90 },
+        { name: "Lakeflow & Workflows", level: 88 },
+        { name: "Databricks SQL & Auto Loader", level: 92 },
+        { name: "AI/BI Dashboards & Genie", level: 85 },
+        { name: "Lakehouse Governance", level: 90 }
       ]
     },
     {
-      title: "Backend",
+      title: "Languages & Databases",
       skills: [
-        { name: "Spring Boot", level: 88 },
-        { name: "FastAPI", level: 75 },
-        { name: "REST APIs", level: 90 }
+        { name: "Python", level: 92 },
+        { name: "SQL", level: 95 },
+        { name: "C# / ASP.NET", level: 82 },
+        { name: "MS SQL Server & MySQL", level: 90 },
+        { name: "PostgreSQL & MongoDB", level: 88 },
+        { name: "Cassandra", level: 80 }
       ]
     },
     {
-      title: "Databases",
+      title: "Cloud & Storage",
       skills: [
-        { name: "MongoDB", level: 88 },
-        { name: "MySQL", level: 85 },
-        { name: "Firebase", level: 80 }
+        { name: "Microsoft Azure", level: 92 },
+        { name: "ADLS Gen2", level: 95 },
+        { name: "Azure Event Hubs", level: 85 },
+        { name: "Azure Synapse Analytics", level: 85 },
+        { name: "Amazon AWS", level: 80 },
+        { name: "Snowflake", level: 82 }
       ]
     },
     {
-      title: "Tools & Automation",
+      title: "DevOps & Orchestration",
       skills: [
-        { name: "Git & GitHub", level: 90 },
-        { name: "VS Code", level: 95 },
-        { name: "Postman", level: 88 },
-        { name: "n8n", level: 82 },
-        { name: "MongoDB Compass", level: 85 },
-        { name: "Antigravity", level: 80 },
-        { name: "Codex", level: 75 }
+        { name: "Terraform (IaC)", level: 85 },
+        { name: "Azure DevOps & CI/CD", level: 88 },
+        { name: "Git & Version Control", level: 90 },
+        { name: "Apache Airflow & Spark", level: 85 },
+        { name: "MLflow & Power Automate", level: 82 },
+        { name: "VS Code & Visual Studio", level: 92 }
       ]
     },
     {
-      title: "Computer Science Concepts",
+      title: "Governance & ML Concepts",
       skills: [
-        { name: "Data Structures", level: 88 },
-        { name: "Algorithms", level: 85 },
-        { name: "DBMS", level: 86 },
-        { name: "OOP", level: 90 },
-        { name: "Software Engineering", level: 84 }
+        { name: "GDPR Compliance & PII", level: 92 },
+        { name: "Customer 360 / SCV", level: 90 },
+        { name: "Data Lineage & Quality", level: 90 },
+        { name: "Agile, Scrum & Kanban", level: 95 },
+        { name: "Machine Learning & NLP", level: 80 }
       ]
     }
   ]
 };
 
-// Brand New Content Creation Data
+// Data Engineering Specializations Data
 export const contentCreation = {
-  badge: "Cinematic Content",
-  heading: "Creative Direction & Cinematic Edits",
-  description: "Beyond coding, I craft visual stories with premium editing, color grading, and creative pacing.",
+  badge: "Core Specializations",
+  heading: "Enterprise Lakehouse & Platform Architecture",
+  description: "Architecting high-throughput data platforms, real-time streaming pipelines, and governed data products.",
   categories: [
     {
-      title: "Cinematic Reels",
-      description: "Visual stories crafted with cinematic lighting, premium color grading, and high-impact sound design.",
-      stats: "50+ Reels Created",
-      icon: "🎥"
-    },
-    {
-      title: "Travel Videos",
-      description: "Immersive travel vlogs and aesthetic edits capturing cultures, landscapes, and visual rhythms.",
-      stats: "15+ Countries/Cities",
-      icon: "✈️"
-    },
-    {
-      title: "Educational Reels",
-      description: "Fast-paced tech tutorials and educational content designed to simplify coding and software engineering.",
-      stats: "100k+ Views",
-      icon: "🧠"
-    },
-    {
-      title: "My Own Creative Edits",
-      description: "Experimental transitions, 3D overlays, and trendsetting visual effects that push creative bounds.",
-      stats: "Personal Projects",
+      title: "Lakehouse Architecture",
+      description: "Designing Medallion Lakehouses (Bronze, Silver, Gold) with Azure Databricks, Delta Lake, PySpark, and Unity Catalog.",
+      stats: "8+ Years Exp",
       icon: "⚡"
+    },
+    {
+      title: "Real-Time Streaming Pipelines",
+      description: "Processing event-driven streaming data using Azure Event Hubs, Delta Live Tables (DLT), and Auto Loader.",
+      stats: "Near Real-Time",
+      icon: "🔄"
+    },
+    {
+      title: "Customer 360 & Single Customer View",
+      description: "Consolidating NetSuite, Salesforce, BigCommerce, GA4, and POS data into trusted analytical datasets.",
+      stats: "Enterprise SCV",
+      icon: "📊"
+    },
+    {
+      title: "Data Governance & GDPR",
+      description: "Implementing PII protection, secure mapping, hashing frameworks, Unity Catalog controls, and RTBF compliance.",
+      stats: "GDPR Compliant",
+      icon: "🔒"
     }
   ]
 };
 
-// Brand New Leadership Data
-export const leadershipList = [
-  {
-    title: "IEEE Madhya Pradesh Section (Social Media Team)",
-    description: "Managed and coordinated digital content, driving audience engagement and designing interactive visual campaigns for tech events.",
-    role: "Social Media Coordinator",
-    badge: "Volunteer"
-  },
-  {
-    title: "Team Coordinator – Go-Kart International Racing 2K25",
-    description: "Led multi-disciplinary teams in project management, budget control, and logistics coordination for a high-profile international racing event.",
-    role: "Team Coordinator",
-    badge: "Leadership"
-  },
-  {
-    title: "5-Day MOE IDE Bootcamp, Roorkee",
-    description: "Participated in an intensive Innovation, Design, and Entrepreneurship Bootcamp organized by the Ministry of Education at IIT Roorkee.",
-    role: "Bootcamp Graduate",
-    badge: "Innovation"
-  },
-  {
-    title: "Hosted INFORIA Tech Summit Hackathon",
-    description: "Organized and hosted the flagship hackathon, managing registrations, mentoring participant teams, and coordinating judge evaluations.",
-    role: "Hackathon Organizer",
-    badge: "Co-Curricular"
-  },
-  {
-    title: "Event Coordinator & Anchoring – INFORIA 2K25",
-    description: "Coordinated technical events and served as the main stage anchor, speaking in front of large crowds and managing the summit flow.",
-    role: "Stage Anchor & Coordinator",
-    badge: "Public Speaking"
-  }
-];
-
-// Brand New Internships Data
+// Enterprise Work Experience Data
 export const internshipsList = [
   {
-    organization: "Netlink, Bhopal",
-    role: "Data Analytics & BI Tools Intern",
-    duration: "June 2025 - August 2025",
-    skills: ["Data Analytics", "Business Intelligence", "Dashboard Design", "Data Modeling"],
-    tech: ["Lumenore", "MySQL", "Excel", "BI Tools"]
+    organization: "Brompton Bicycle, UK",
+    role: "Azure Data Engineer",
+    duration: "Sept 2023 - Present",
+    skills: [
+      "Designed enterprise-scale Lakehouse platforms using Azure Databricks, PySpark, Delta Lake & Medallion Architecture",
+      "Built batch and near real-time ETL/ELT pipelines using Delta Live Tables (DLT), Lakeflow, Auto Loader & Databricks Workflows",
+      "Implemented Unity Catalog, AI/BI Dashboards, Databricks Genie, data lineage & Lakehouse governance",
+      "Engineered Customer 360 & Single Customer View (SCV) consolidating NetSuite, Salesforce, BigCommerce & GA4 data",
+      "Designed GDPR-compliant governance including PII protection, hashing frameworks & Right-to-be-Forgotten (RTBF) processes"
+    ],
+    tech: ["Azure Databricks", "PySpark", "Delta Lake", "Unity Catalog", "DLT", "Lakeflow", "Databricks SQL", "Terraform"]
   },
   {
-    organization: "Canva",
-    role: "Visual Content Creator & Designer",
-    duration: "May 2024 - June 2024",
-    skills: ["Visual Designing", "Poster Design", "Team Branding", "Asset Creation"],
-    tech: ["Canva Pro", "Figma", "Canva Design Suite"]
+    organization: "Betway Group, UK",
+    role: "Data Engineer",
+    duration: "Apr 2022 - Sept 2023",
+    skills: [
+      "Engineered end-to-end ETL/ELT pipelines using Azure Data Factory (ADF), Azure Databricks, PySpark & Delta Lake",
+      "Implemented Delta Lake & Delta Tables to provide ACID transactions, schema enforcement & version control",
+      "Built incremental data processing frameworks using Change Data Capture (CDC) techniques",
+      "Developed real-time data ingestion pipelines using Azure Event Hubs and Databricks Jobs scheduling"
+    ],
+    tech: ["Azure Data Factory", "Azure Databricks", "PySpark", "Delta Lake", "Event Hubs", "Apache Spark", "ADLS Gen2"]
   },
   {
-    organization: "CollegeTips.in",
-    role: "Web Development Intern",
-    duration: "1 Month (Offline)",
-    skills: ["Frontend Development", "Responsive Layouts", "API Testing", "Web Performance"],
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"]
+    organization: "Verizon",
+    role: "Data Engineer",
+    duration: "Feb 2020 - Apr 2022",
+    skills: [
+      "Optimized end-to-end data pipelines, improving data processing efficiency by 30%",
+      "Optimized complex SQL queries using joins, indexing, partitioning & query tuning techniques",
+      "Implemented data governance, security, and access control measures to ensure organizational compliance",
+      "Implemented Infrastructure as Code (IaC) using Terraform and automated CI/CD pipelines using Azure DevOps"
+    ],
+    tech: ["Python", "SQL Server", "Terraform", "Azure DevOps", "YAML CI/CD", "Git", "Agile"]
+  },
+  {
+    organization: "Capgemini",
+    role: "Associate Consultant",
+    duration: "Sept 2018 - Feb 2020",
+    skills: [
+      "Designed automation solutions using Python, Machine Learning, and Natural Language Processing (NLP) on AWS EC2",
+      "Built AI-driven solutions for infrastructure monitoring and predictive server health analysis",
+      "Built Python-based data integration solutions loading data into AWS Cassandra and Elastic Beanstalk"
+    ],
+    tech: ["Python", "Machine Learning", "NLP", "AWS EC2", "AWS Cassandra", "AWS Elastic Beanstalk", "Matplotlib"]
+  },
+  {
+    organization: "Capgemini",
+    role: "Senior Software Engineer",
+    duration: "Sept 2017 - Sept 2018",
+    skills: [
+      "Developed enterprise web applications using C#, ASP.NET MVC, SQL Server, HTML, CSS, JavaScript & AngularJS",
+      "Designed statistical algorithms using R to improve application performance and reduce overall system costs",
+      "Collaborated throughout software development lifecycle in Agile sprint iterations"
+    ],
+    tech: ["C#", "ASP.NET MVC", "SQL Server", "JavaScript", "AngularJS", "R", "HTML/CSS"]
   }
 ];
 
-// Brand New Soft Skills Data
+// Leadership & Governance Data
+export const leadershipList = [
+  {
+    title: "Enterprise Data Governance & PII Protection",
+    description: "Designed and implemented GDPR-compliant data governance frameworks, PII masking, hashing frameworks, Unity Catalog access controls, and Right-to-be-Forgotten (RTBF) automated workflows.",
+    role: "Governance & Security Architect",
+    badge: "Data Governance"
+  },
+  {
+    title: "Customer 360 & Single Customer View (SCV)",
+    description: "Led multi-source data consolidation across NetSuite, Salesforce, BigCommerce, Lightspeed, and GA4 to deliver unified customer data products for analytics.",
+    role: "Lead Data Architect",
+    badge: "Customer 360"
+  },
+  {
+    title: "Cloud Infrastructure Automation & IaC",
+    description: "Architected Infrastructure as Code (IaC) using Terraform and automated CI/CD pipelines with Azure DevOps and YAML for cloud data platform deployments.",
+    role: "DevOps & Cloud Lead",
+    badge: "Automation"
+  },
+  {
+    title: "Spark Workloads & SQL Performance Tuning",
+    description: "Optimized Apache Spark workloads, Delta Lake partitioning, and complex SQL query execution plans to improve processing speed by 30% and optimize cloud costs.",
+    role: "Performance Optimization",
+    badge: "Optimization"
+  }
+];
+
+// Soft Skills Data
 export const softSkillsList = [
-  { name: "Leadership", icon: "👑", desc: "Guiding teams, managing tasks, and driving project completion with shared vision." },
-  { name: "Public Speaking", icon: "🎤", desc: "Confident stage presence, anchoring summits, and delivering articulate technical ideas." },
-  { name: "Team Collaboration", icon: "🤝", desc: "Collaborating across fields, building racing carts, and engineering code in sync." },
-  { name: "Communication", icon: "💬", desc: "Clear, concise, and structured interactions in both business and technical contexts." },
-  { name: "Problem Solving", icon: "🧩", desc: "Breaking down complex engineering tasks into clean, logical, and modular pieces." },
-  { name: "Adaptability", icon: "🌟", desc: "Quick to pick up new frameworks like FastAPI, Spring Boot, or automation tools like n8n." },
-  { name: "Creativity", icon: "🎨", desc: "Blending cinematic aesthetics with software structure to build premium experiences." },
-  { name: "Time Management", icon: "⏰", desc: "Balancing B.Tech studies, event hosting, and developing robust software platforms." }
+  { name: "Data Architecture", icon: "🏗️", desc: "Designing scalable Lakehouse structures, Medallion layers, and governed data pipelines." },
+  { name: "Problem Solving", icon: "🧩", desc: "Optimizing complex Spark queries, debugging pipeline bottlenecks, and tuning performance." },
+  { name: "Stakeholder Management", icon: "🤝", desc: "Collaborating with solution architects, business analysts, and executive teams." },
+  { name: "Data Governance", icon: "🛡️", desc: "Enforcing PII protection, Unity Catalog security controls, and GDPR compliance." },
+  { name: "Agile Leadership", icon: "⏱️", desc: "Leading sprint cycles, managing tasks, and delivering production-ready releases." },
+  { name: "Communication", icon: "💬", desc: "Articulating complex data engineering concepts clearly to technical and business teams." },
+  { name: "Adaptability", icon: "🌟", desc: "Quickly mastering emerging technologies like Databricks Genie, DLT, and Lakeflow." },
+  { name: "Continuous Learning", icon: "📚", desc: "Holding multiple Databricks, Azure, and Terraform certifications to stay ahead." }
 ];
 
 export const projects = [
   {
-    id: "foodmesh",
+    id: "brompton-lakehouse",
     number: "01",
-    badge: "🚀 Flagship Project",
-    title: "FoodMesh",
+    badge: "🚀 Flagship Enterprise Project",
+    title: "Enterprise Lakehouse Platform — Brompton Bicycle",
     description:
-      "FoodMesh — An enterprise-grade multi-tenant restaurant management and food ordering SaaS platform inspired by UrbanPiper. It enables restaurants to manage multiple outlets, menus, inventory, customers, staff, and orders through a scalable architecture with secure authentication, role-based access control, and real-time operations. Built with React, Next.js, NestJS, PostgreSQL, Redis, Kafka, Elasticsearch, Docker, Kubernetes, and AWS.",
+      "An enterprise-scale cloud Lakehouse platform engineered on Azure Databricks using PySpark, Delta Lake, and Medallion Architecture (Bronze, Silver, Gold). Features automated batch & streaming pipelines with Delta Live Tables (DLT), Auto Loader, Databricks Workflows, and Unity Catalog governance — powering Customer 360 analytics, AI/BI dashboards, and Databricks Genie self-service reporting.",
     techTags: [
-      "React",
-      "Next.js",
-      "NestJS",
-      "PostgreSQL",
-      "Redis",
-      "Kafka",
-      "Elasticsearch",
-      "Docker",
-      "Kubernetes",
-      "AWS",
+      "Azure Databricks",
+      "PySpark",
+      "Delta Lake",
+      "Unity Catalog",
+      "Delta Live Tables (DLT)",
+      "Auto Loader",
+      "Databricks SQL",
+      "Terraform",
+      "Azure Data Factory",
     ],
     links: {
-      github: "https://github.com/ersamirsingh/UrbanPiper",
+      github: "https://github.com/sidhartha-thogari",
       demo: null,
     },
     isFlagship: true,
   },
   {
-    id: "karigar",
+    id: "betway-etl-pipeline",
     number: "02",
     badge: null,
-    title: "Karigar",
+    title: "Real-Time Ingestion & CDC Pipeline — Betway Group",
     description:
-      "A platform connecting local skilled workers with customers, featuring real-time search, worker profiles, and booking management with full database integration.",
-    techTags: ["React", "Node.js", "MongoDB", "Express", "REST API"],
+      "End-to-end cloud data processing pipeline built with Azure Data Factory (ADF), Azure Databricks, PySpark, and Delta Lake. Features incremental data processing with Change Data Capture (CDC), streaming ingestion via Azure Event Hubs, and automated Databricks job orchestration for high-volume analytics.",
+    techTags: ["Azure Data Factory", "Azure Databricks", "PySpark", "Delta Lake", "Event Hubs", "ADLS Gen2", "SQL"],
     links: {
-      github: "https://github.com/mdyusuf0/Karigar",
-      frontendDemo: "https://karigar-frontend.onrender.com",
-      backendApi: "https://karigar-zny2.onrender.com",
+      github: "https://github.com/sidhartha-thogari",
+      demo: null,
     },
     isFlagship: false,
   },
   {
-    id: "sentiment-analysis",
+    id: "aws-ml-automation",
     number: "03",
     badge: null,
-    title: "AI-Powered Sentiment Analysis",
+    title: "AI-Driven Infrastructure Monitoring & NLP",
     description:
-      "A full-stack web application that analyzes citizen feedback using Artificial Intelligence to classify sentiments as positive, negative, or neutral. Features a responsive React frontend, a Node.js backend, MongoDB for data storage, and n8n automation for workflow orchestration — enabling real-time insights and efficient feedback management.",
-    techTags: ["React", "Node.js", "MongoDB", "n8n", "AI/ML", "REST API"],
+      "Automated infrastructure monitoring and predictive feedback platform built with Python, Machine Learning, and Natural Language Processing (NLP) deployed on AWS EC2 and AWS Elastic Beanstalk with Cassandra database storage.",
+    techTags: ["Python", "Machine Learning", "NLP", "AWS EC2", "AWS Cassandra", "Elastic Beanstalk"],
     links: {
-      github: "#", // Update when available
+      github: "https://github.com/sidhartha-thogari",
+      demo: null,
     },
     isFlagship: false,
   },
@@ -299,61 +340,56 @@ export const projects = [
 export const certificates = {
   featured: [
     {
-      name: "Oracle Cloud Infrastructure 2025",
-      issuer: "Oracle",
+      name: "Databricks Certified Data Engineer Associate",
+      issuer: "Databricks",
+      icon: "🧱",
+    },
+    {
+      name: "Azure Databricks Platform Architect",
+      issuer: "Databricks / Azure",
       icon: "☁️",
     },
     {
-      name: "Programming in Java (94%)",
-      issuer: "NPTEL",
-      icon: "☕",
+      name: "Azure Data Engineer Associate (DP-203)",
+      issuer: "Microsoft",
+      icon: "⚡",
     },
     {
-      name: "C Programming & Assembly Language",
-      issuer: "NPTEL",
-      icon: "⚙️",
+      name: "HashiCorp Certified: Terraform Associate",
+      issuer: "HashiCorp",
+      icon: "🏗️",
     },
     {
-      name: "Technology Job Simulation",
-      issuer: "Deloitte",
-      icon: "💼",
+      name: "Generative AI Fundamentals",
+      issuer: "Databricks",
+      icon: "🤖",
     },
     {
-      name: "Career Edge – IT Primer",
-      issuer: "TCS iON",
-      icon: "🎓",
-    },
-    {
-      name: "Fundamentals of BI & Analytics",
-      issuer: "Lumenore",
-      icon: "📊",
+      name: "Databricks Lakehouse Fundamentals",
+      issuer: "Databricks",
+      icon: "🌊",
     },
   ],
-  viewAllUrl:
-    "https://drive.google.com/file/d/1ObdGWtVSx8SsfR4AcbCySSd9LFXcAs9f/view?usp=sharing",
+  viewAllUrl: resumePdf,
 };
 
 export const education = {
-  degree: "B.Tech – Computer Science & Engineering",
-  institution: "IES College of Technology (RGPV)",
-  cgpa: "8.35",
-  graduation: "2027",
-  twelfth: "12th Science – 81%",
-  tenth: "10th CBSE – 70%",
+  degree: "Master’s in Applied Data Science",
+  institution: "University of Essex, United Kingdom",
+  graduation: "Jan 2022",
+  summary: "Advanced data engineering, statistical modeling, machine learning, and enterprise data platforms.",
 };
 
 export const footerContent = {
   taglines: [
-    "Software Engineering & Web Dev",
-    "Java · Spring Boot · React",
-    "Full Stack Applications",
+    "Senior Data Engineer",
+    "Azure Databricks · PySpark · Delta Lake",
+    "Enterprise Lakehouse Architectures",
   ],
-  credential: "B.Tech CSE · CGPA 8.35",
-  copyright: `© ${new Date().getFullYear()} Md Yusuf | Built with React`,
+  credential: "Master's in Applied Data Science · 8+ Yrs Exp",
+  copyright: `© ${new Date().getFullYear()} Sidhartha Thogari | Built with React`,
 };
 
-// EmailJS Configuration
-// Will read directly from environment variables in Vite (starting with VITE_)
 export const emailjsConfig = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_EMAILJS_SERVICE_ID",
   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_EMAILJS_TEMPLATE_ID",
